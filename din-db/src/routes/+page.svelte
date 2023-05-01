@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import Head from '../Lib/header.svelte'
+</script>
+
+<style>
+	.Home {
+		display: grid;
+		place-items: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+	}
+</style>
+
+<div class="Home">
+	Text
+</div>
