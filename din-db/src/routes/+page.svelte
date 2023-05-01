@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Head from '../Lib/header.svelte'
 </script>
 
 <style>

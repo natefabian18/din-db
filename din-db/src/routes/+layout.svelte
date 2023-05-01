@@ -1,16 +1,15 @@
 <script>
-	import Head from '../Lib/header.svelte'
+	// your script goes here
 </script>
 
 <style>
-	main {
-		width: 100vw;
+	.AppContainer {
 		height: 100vh;
-		padding: 1em;
+		width: 100vw;
+		overflow: none;
 	}
 </style>
 
-<main>
-	<Head />
-	<slot>No Item Found</slot>
-</main>
+<div class="AppContainer">
+	<slot> </slot>
+</div>
