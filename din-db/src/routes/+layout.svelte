@@ -1,15 +1,30 @@
-<script>
-	// your script goes here
+<script lang="ts">
+	import Header from '../Lib/Header.svelte';
+	import Footer from '../Lib/Footer.svelte';
+
+	import "@picocss/pico";
 </script>
 
 <style>
-	.AppContainer {
+	.MainContainer {
 		height: 100vh;
-		width: 100vw;
-		overflow: none;
+		display: flex;
+		flex-direction: column;
+	}
+
+	main {
+		flex-grow: 1;
 	}
 </style>
 
-<div class="AppContainer">
-	<slot> </slot>
+<div class="container-fluid MainContainer">
+	<header>
+		<Header />
+	</header>
+	<main>
+		<slot>MainComponent Not Found</slot>
+	</main>
+	<footer>
+		<Footer />
+	</footer>
 </div>

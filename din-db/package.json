@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "vite dev --host",
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "playwright test",
@@ -33,7 +33,12 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fortawesome/free-brands-svg-icons": "^6.4.0",
+		"@fortawesome/free-solid-svg-icons": "^6.4.0",
+		"@picocss/pico": "^1.5.10",
 		"dotenv": "^16.0.3",
-		"mssql": "^9.1.1"
+		"mssql": "^9.1.1",
+		"svelte-fa": "^3.0.3",
+		"tinymce": "^6.4.2"
 	}
 }
